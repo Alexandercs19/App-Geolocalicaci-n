@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Marker } from 'models/marker.module';
 
-const apiKey = "zrDkhwnB3AtEQ0muz2CMQeRgaF0jxtLxi6MRV0k22vY";
+const apiKey = "5_oV_kMNUAacQ2q4z-eqXKtj3zYDrPRKcYd10l-jImk";
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,7 @@ export class MapControllerService {
   }
 
   getHttpData(marker: Marker) {
-    var link = `https://revgeocode.search.hereapi.com/v1/revgeocode?at=${marker.position.lat},${marker.position.long}&lang=es-DO&apikey=${apiKey}`;
+    var link = `https://revgeocode.search.hereapi.com/v1/revgeocode?at=${marker.position.lat},${marker.position.lng}&lang=es-DO&apikey=${apiKey}`;
     return this.http.get(link);
 
   }

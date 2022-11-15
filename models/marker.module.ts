@@ -2,7 +2,7 @@ export interface Marker{
 
     position: {
         lat:number,
-        long:number
+        lng:number,
     },
     title:string
 

@@ -28,7 +28,7 @@ export class HomePage {
       var marker: Marker = {
         position: {
           lat: parseFloat(lat),
-          long: parseFloat(long),
+          lng: parseFloat(long),
         },
         title: Title
       }
